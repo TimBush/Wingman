@@ -21,4 +21,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 // AUTH ROUTES
 Route::get('/register', 'AuthController@register');
-Route::get('/register', 'AuthController@login');
+//Route::get('/login', 'AuthController@login');
+Route::get('/verify-email', 'AuthController@verifyEmail');
+Route::post('/tokens/create', 'AuthController@createToken');
