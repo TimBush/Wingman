@@ -50,7 +50,7 @@ class AuthController extends Controller
 
         if (Auth::attempt($credentials))
         {
-            // Get the user
+            // Get the user from the request
             Auth::user();
         }
 
